@@ -11,12 +11,12 @@ var document = doc[Math.floor(Math.random() * doc.length)]
 const buttons = [
 { buttonId: `${usedPrefix}ytmp3 ${urll}`, buttonText: { displayText: '🎵 𝐚𝐮𝐝𝐢𝐨' }, type: 1 },
 { buttonId: `${usedPrefix}ytmp4 ${urll}`, buttonText: { displayText: '🎥 𝐯𝐢𝐝𝐞𝐨' }, type: 1 },
-{ buttonId: `${usedPrefix}playlist ${text}`, buttonText: { displayText: '𝐩𝐢𝐮̀ 𝐫𝐢𝐬𝐮𝐥𝐭𝐚𝐭𝐢' }, type: 1 }, ]    
+{ buttonId: `${usedPrefix}playlist ${text}`, buttonText: { displayText: 'More results' }, type: 1 }, ]    
 let texto1 = `${title}
 📆 Risale a ${publishedTime}
 ⌚ ${durationH}
 👀 ${viewH}`.trim()
-let buttonMessage = { "document": { url: "http://wa.me/393312171655" }, "fileName": '⌈🔊 𝐏𝐋𝐀𝐘 🔊⌋', "mimetype": 'application/vnd.ms-excel', "caption": texto1, "fileLength": '0', "mentions": [m.sender], "footer": wm, "buttons": buttons, "headerType": 4, contextInfo: { "mentionedJid": [m.sender], "externalAdReply": { "showAdAttribution": false, "title": `${title}`, "mediaType": 2, "previewType": "VIDEO", "thumbnail": await (await fetch(thumbnail)).buffer(), "mediaUrl": `${urll}`, "sourceUrl": `http://youtube.com` }}} 
+let buttonMessage = { "document": { url: "http://wa.me/254778218614" }, "fileName": '⌈🔊 𝐏𝐋𝐀𝐘 🔊⌋', "mimetype": 'application/vnd.ms-excel', "caption": texto1, "fileLength": '0', "mentions": [m.sender], "footer": wm, "buttons": buttons, "headerType": 4, contextInfo: { "mentionedJid": [m.sender], "externalAdReply": { "showAdAttribution": false, "title": `${title}`, "mediaType": 2, "previewType": "VIDEO", "thumbnail": await (await fetch(thumbnail)).buffer(), "mediaUrl": `${urll}`, "sourceUrl": `http://youtube.com` }}} 
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 } catch {
 try {

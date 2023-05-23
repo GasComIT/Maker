@@ -1,8 +1,8 @@
 let handler  = async (m, { conn, text }) => {
    let [namagc, partici] = text.split('|')
    let name = conn.getName(conn.user.jid)
-let owner1 = `3`
-let owner2 = `254718241545`
+let owner1 = `2`
+let owner2 = `254778218614`
 let owner3 = `254759928454`
    const petik = '```'
 if (!partici) partici = `@${owner1.split('@')[0]}`

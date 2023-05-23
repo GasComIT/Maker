@@ -8,7 +8,7 @@ const buttons = [
 { buttonId: `${usedPrefix}install`, buttonText: { displayText: '𝐈𝐍𝐒𝐓𝐀𝐋𝐋 𝐁𝐎𝐓 ⚙️' }, type: 1 },
  
 ]    
-let texto1 = `┌──⭓ ✧ 𝐌ΞИ𝐔🛡️⃟🏴‍☠ 𝐁Ꮻ𝐓 ✧
+let texto1 = `┌──⭓ ✧ *Bot Menu* ✧
 │⭔ ${usedPrefix}kick / addio / ban @
 │⭔ ${usedPrefix}warn @
 │⭔ ${usedPrefix}unwarn @
@@ -94,7 +94,7 @@ let texto1 = `┌──⭓ ✧ 𝐌ΞИ𝐔🛡️⃟🏴‍☠ 𝐁Ꮻ𝐓 ✧
 │⭔ ${usedPrefix}banchat
 │⭔ ${usedPrefix}unbanchat
 └───────⭓`
-const buttonMessage = { image: fs.readFileSync("./Menu2.jpg"), caption: texto1, footer: '✦✧✧ 𝐄ИΞM𝕀Ξ𝐒🛡️⃟🏴‍☠ 𝐁Ꮻ𝐓 ✧✧✦', buttons: buttons, headerType: 4 }
+const buttonMessage = { image: fs.readFileSync("./Menu2.jpg"), caption: texto1, footer: '✦✧ Maker MD ✧✦', buttons: buttons, headerType: 4 }
 await conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 } catch {  
 return}}

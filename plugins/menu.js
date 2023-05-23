@@ -19,7 +19,7 @@ let neww = performance.now()
 let speed = neww - old
 let info = `
 ◻──────────────◻
-✦✧✧ 𝐌ΞИ𝐔🛡️⃟🏴‍☠ 𝐁Ꮻ𝐓 ✧✧✦
+✦✧ *Bot Menu* ✧✦
 
 ┌──⭓ Group
 │⭔ .kick / addio / ban @
@@ -57,7 +57,7 @@ let info = `
 
 🛡️⃟🏴‍☠ ════ •⊰❂⊱• ════ 🛡️⃟🏴‍☠
 
-┌──⭓ 𝐌𝐄𝐃𝐈𝐀
+┌──⭓ *Media*
 │⭔ .attp (txt)
 │⭔ .ttp (txt)
 │⭔ .gtts (txt)
@@ -85,13 +85,13 @@ let info = `
 
 🛡️⃟🏴‍☠ ════ •⊰❂⊱• ════ 🛡️⃟🏴‍☠
 
-┌──⭓ Logo menu
+┌──⭓ *Logo menu*
 │⭔ .menuloghi
 └───────⭓
 
 🛡️⃟🏴‍☠ ════ •⊰❂⊱• ════ 🛡️⃟🏴‍☠
 
-┌──⭓ 𝐒𝐏𝐄𝐂𝐈𝐀𝐋𝐈
+┌──⭓ *Extras*
 │⭔ .gay @
 │⭔ .frocio @
 │⭔ .lesbica @
@@ -149,10 +149,10 @@ let info = `
 │⭔ .install
 └───────⭓
 
-✦✧✧ 𝐄ИΞM𝕀Ξ𝐒🛡️⃟🏴‍☠ 𝐁Ꮻ𝐓 ✧✧✦ `.trim() 
+✦✧✧ Maker MD ✧✧✦ `.trim() 
 conn.reply(m.chat, info, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: '𝙸𝙽𝙵𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃',
+title: 'Bot Info',
 body: 'ᴛʜᴇ ᴍʏsᴛɪᴄ ﹣ ʙᴏᴛ',         
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `https://github.com/GasComIT`}}})

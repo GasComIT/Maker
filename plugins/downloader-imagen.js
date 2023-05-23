@@ -4,8 +4,8 @@ if (!text) return
 const res = await googleImage(text)
 let image = await res.getRandom()
 let link = image
-let captionn = `🔎 𝐑𝐢𝐬𝐮𝐥𝐭𝐚𝐭𝐨 𝐩𝐞𝐫 ${text}`
-conn.sendButton(m.chat, captionn, author, link, [['𝐩𝐫𝐨𝐬𝐬𝐢𝐦𝐚 𝐢𝐦𝐦𝐚𝐠𝐢𝐧𝐞', `${usedPrefix}cerca ${text}`]], m)}
+let captionn = `🔎 Resulta for ${text}`
+conn.sendButton(m.chat, captionn, author, link, [['Next Image', `${usedPrefix}cerca ${text}`]], m)}
 handler.help = ['cerca <query>', 'imagen <query>']
 handler.tags = ['internet', 'tools']
 handler.command = /^(cerca)$/i

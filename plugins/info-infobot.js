@@ -7,10 +7,10 @@ let runtime = function(seconds) {
 	var h = Math.floor(seconds % (3600 * 24) / 3600);
 	var m = Math.floor(seconds % 3600 / 60);
 	var s = Math.floor(seconds % 60);
-	var dDisplay = d > 0 ? d + (d == 1 ? " 𝐠𝐢𝐨𝐫𝐧𝐨, " : " 𝐠𝐢𝐨𝐫𝐧𝐢, ") : "";
-	var hDisplay = h > 0 ? h + (h == 1 ? " 𝐨𝐫𝐚, " : " 𝐨𝐫𝐞, ") : "";
-	var mDisplay = m > 0 ? m + (m == 1 ? " 𝐦𝐢𝐧𝐮𝐭𝐨, " : " 𝐦𝐢𝐧𝐮𝐭𝐢, ") : "";
-	var sDisplay = s > 0 ? s + (s == 1 ? " 𝐬𝐞𝐜𝐨𝐧𝐝𝐨" : " 𝐬𝐞𝐜𝐨𝐧𝐝𝐢") : "";
+	var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
+	var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
+	var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " minutes, ") : "";
+	var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
 	return dDisplay + hDisplay + mDisplay + sDisplay;
 }
 import MessageType from '@adiwajshing/baileys'
@@ -30,17 +30,18 @@ let old = performance.now()
 let neww = performance.now()
 let speed = (neww - old).toFixed(4)
 let info = `
-🛡️⃟🏴‍☠️ ═════ •⊰❂⊱• ═════ 🛡️⃟🏴‍☠️
+◻──────────────◻
 
-𝐏𝐈𝐍𝐆 🛡️⃟🏴‍☠️ 𝐁Ꮻ𝐓
-𝐀𝐓𝐓𝐈𝐕𝐈𝐓𝐀': ${runtime(process.uptime())}
-𝐕𝐄𝐋𝐎𝐂𝐈𝐓𝐀': ${speed} 𝐬𝐞𝐜𝐨𝐧𝐝𝐢
+_Maker MD ping response_
+*Bot rnutime*   : ${runtime(process.uptime())}
+*Server speed*  : ${speed} seconds
+*Bot Ownee*     : _Mr. Benson_
 
-🛡️⃟🏴‍☠️ ═════ •⊰❂⊱• ═════ 🛡️⃟🏴‍☠️
+◻──────────────◻
 `.trim() 
 conn.reply(m.chat, info, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: 'ArctixBots',
+title: 'Maker MD',
 body: 'ᴛʜᴇ ᴍʏsᴛɪᴄ ﹣ ʙᴏᴛ',         
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `https://github.com/GasComIT`}}})

@@ -19,12 +19,12 @@ total++
 sider.push(member[i])}}}
 switch (command) {
 case "inattivi": 
-if(total == 0) return conn.reply(m.chat, `𝐧𝐞𝐬𝐬𝐮𝐧 𝐢𝐧𝐚𝐭𝐭𝐢𝐯𝐨`, m) 
-m.reply(`𝐑𝐞𝐯𝐢𝐬𝐢𝐨𝐧𝐞 𝐢𝐧𝐚𝐭𝐭𝐢𝐯𝐢 😴\n${await conn.getName(m.chat)}\n\n${sider.length} 𝐢𝐧𝐚𝐭𝐭𝐢𝐯𝐢:\n${sider.map(v => '  👉🏻 @' + v.replace(/@.+/, '')).join('\n')}\n`, null, { mentions: sider }) 
+if(total == 0) return conn.reply(m.chat, `No Idle`, m) 
+m.reply(`Inactive review 😴\n${await conn.getName(m.chat)}\n\n${sider.length} Inactive:\n${sider.map(v => '  👉🏻 @' + v.replace(/@.+/, '')).join('\n')}\n`, null, { mentions: sider }) 
   break   
 case "viainattivi":  
-        if(total == 0) return conn.reply(m.chat, `𝐧𝐞𝐬𝐬𝐮𝐧 𝐢𝐧𝐚𝐭𝐭𝐢𝐯𝐨`, m) 
-       await m.reply(`𝐑𝐈𝐌𝐎𝐙𝐈𝐎𝐍𝐄 𝐈𝐍𝐀𝐓𝐓𝐈𝐕𝐈 🚫\n\n${sider.map(v => '@' + v.replace(/@.+/, '')).join('\n')}\n`, null, { mentions: sider }) 
+        if(total == 0) return conn.reply(m.chat, `No iddle`, m) 
+       await m.reply(`Inactive removal 🚫\n\n${sider.map(v => '@' + v.replace(/@.+/, '')).join('\n')}\n`, null, { mentions: sider }) 
 await conn.groupParticipantsUpdate(m.chat, sider, 'remove')
 break
 }}

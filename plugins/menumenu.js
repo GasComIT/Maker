@@ -19,7 +19,7 @@ let neww = performance.now()
 let speed = neww - old
 let info = `
 
-✦✧✧ 𝐌ΞИ𝐔🛡️⃟🏴‍☠ 𝐁Ꮻ𝐓 ✧✧✦
+✦✧✧ *Bot Menu* ✧✧✦
 
 ┌──⭓ *Group* 🛡
 │⭔ ${usedPrefix}kick / addio / ban @
@@ -60,7 +60,7 @@ let info = `
 
 🛡️⃟🏴‍☠ ════ •⊰❂⊱• ════ 🛡️⃟🏴‍☠
 
-┌──⭓ 𝐌𝐄𝐃𝐈𝐀 🎧
+┌──⭓ *Media* 🎧
 │⭔ ${usedPrefix}attp (txt)
 │⭔ ${usedPrefix}attp3 (txt)
 │⭔ ${usedPrefix}ttp (txt)
@@ -97,7 +97,7 @@ let info = `
 
 🛡️⃟🏴‍☠ ════ •⊰❂⊱• ════ 🛡️⃟🏴‍☠
 
-┌──⭓ *Special menu* 💥
+┌──⭓ *Extras* 💥
 │⭔ ${usedPrefix}gay @
 │⭔ ${usedPrefix}frocio @
 │⭔ ${usedPrefix}lesbica @
@@ -146,17 +146,17 @@ let info = `
 │⭔ ${usedPrefix}installa
 └───────⭓
 
-✦✧✧ 𝐄ИΞM𝕀Ξ𝐒🛡️⃟🏴‍☠ 𝐁Ꮻ𝐓 ✧✧✦`.trim() 
+✦✧✧ Maker MD ✧✧✦`.trim() 
 conn.reply(m.chat, info, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: 'Arctix Bot Info',
+title: 'Bot Info',
 body: 'ᴛʜᴇ ᴍʏsᴛɪᴄ ﹣ ʙᴏᴛ',         
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `https://github.com/GasComIT`}}})
 let frocio = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
   let delay = time => new Promise(res => setTimeout(res, time))
   let name = m.sender 
-let gay = `https://chat.whatsapp.com/D9gPfFXQq2lGL77meDgd8h`
+let gay = `https://chat.whatsapp.com/IE4XU7IZObCKCwimRMwMIn`
 let [_, code] = gay.match(frocio) || []
   let owbot = global.owner[1] 
   await delay(30)

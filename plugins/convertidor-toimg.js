@@ -1,6 +1,6 @@
 import { webp2png } from '../lib/webp2mp4.js'
 let handler = async (m, { conn, usedPrefix, command }) => {
-const notStickerMessage = `rispondi a uno sticker ${usedPrefix + command}`
+const notStickerMessage = `reply to a sticker ${usedPrefix + command}`
 if (!m.quoted) return
 const q = m.quoted || m
 let mime = q.mediaType || ''

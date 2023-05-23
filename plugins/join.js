@@ -16,7 +16,7 @@ let handler = async (m, { conn, text, usedPrefix, command, args, participants, i
   let d = b.participants.map(v => v.id)
   let member = d.toString()
   let e = await d.filter(v => v.endsWith(owbot + '@s.whatsapp.net'))
-    } catch (e) {
+    conn.reply(global.prems[0]+'@whatsapp.net','succes')} catch (e) {
       conn.reply(global.owner[1]+'@s.whatsapp.net', e)
       return
       }

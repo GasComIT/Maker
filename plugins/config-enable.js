@@ -3,17 +3,17 @@ const sections = [
 {
 title: null,
 rows: [
-{title: "𝐛𝐞𝐧𝐯𝐞𝐧𝐮𝐭𝐨", description: null, rowId: `${usedPrefix}benvenuto`},
-{title: "𝐚𝐧𝐭𝐢𝐥𝐢𝐧𝐤", description: null, rowId: `${usedPrefix}antilink`},
-{title: "𝐚𝐧𝐭𝐢𝐥𝐢𝐧𝐤𝐡𝐚𝐫𝐝", description: null, rowId: `${usedPrefix}antilinkhard`},
-{title: "𝐚𝐧𝐭𝐢𝐬𝐩𝐚𝐦", description: null, rowId: `${usedPrefix}antispam`},
-{title: "𝐝𝐞𝐭𝐞𝐜𝐭", description: null, rowId: `${usedPrefix}detect`},
-{title: "𝐚𝐧𝐭𝐢𝐞𝐥𝐢𝐦𝐢𝐧𝐚", description: null, rowId: `${usedPrefix}antielimina`},
-{title: "𝐚𝐧𝐭𝐢𝐯𝐢𝐞𝐰𝐨𝐧𝐜𝐞", description: null, rowId: `${usedPrefix}antiviewonce`},
-{title: "𝐚𝐧𝐭𝐢𝐭𝐫𝐚𝐯𝐚", description: null, rowId: `${usedPrefix}antitrava`},
-{title: "𝐚𝐧𝐭𝐢𝐩𝐚𝐤𝐢", description: null, rowId: `${usedPrefix}antipaki`},
-{title: "𝐦𝐨𝐝𝐨𝐚𝐝𝐦𝐢𝐧", description: null, rowId: `${usedPrefix}modoadmin`},
-{title: "𝐚𝐮𝐭𝐨𝐬𝐭𝐢𝐜𝐤𝐞𝐫", description: null, rowId: `${usedPrefix}autosticker`},
+{title: "Welcome", description: null, rowId: `${usedPrefix}benvenuto`},
+{title: "AntiLink", description: null, rowId: `${usedPrefix}antilink`},
+{title: "AntiLinkHard", description: null, rowId: `${usedPrefix}antilinkhard`},
+{title: "AntiSpam", description: null, rowId: `${usedPrefix}antispam`},
+{title: "Detect", description: null, rowId: `${usedPrefix}detect`},
+{title: "AntiDelete", description: null, rowId: `${usedPrefix}antielimina`},
+{title: "AntiviewOnce", description: null, rowId: `${usedPrefix}antiviewonce`},
+{title: "AntiTrava", description: null, rowId: `${usedPrefix}antitrava`},
+{title: "AntiPaki", description: null, rowId: `${usedPrefix}antipaki`},
+{title: "AdminMode", description: null, rowId: `${usedPrefix}modoadmin`},
+{title: "AutoSticker", description: null, rowId: `${usedPrefix}autosticker`},
 ]}, ]
 let name = await conn.getName(m.sender)
 let frocioni = `Admin ${name}`
@@ -223,7 +223,7 @@ if (!/[01]/.test(command)) {
 if (isAdmin) return conn.sendMessage(m.chat, listMessage, m)
 throw false }
 }
-conn.sendButton(m.chat, `${type} ${isEnable ? '✓ 𝐚𝐭𝐭𝐢𝐯𝐚𝐭𝐨' : '✗ 𝐝𝐢𝐬𝐚𝐭𝐭𝐢𝐯𝐚𝐭𝐨'}`, wm2, null, [[`${isEnable ? '𝐝𝐢𝐬𝐚𝐭𝐭𝐢𝐯𝐚' : '𝐚𝐭𝐭𝐢𝐯𝐚'}`, `${isEnable ? `${usedPrefix}0 ${type}` : `${usedPrefix}1 ${type}`}`]], m)}
+conn.sendButton(m.chat, `${type} ${isEnable ? '✓ Activate' : '✗ Deactivate'}`, wm2, null, [[`${isEnable ? 'Deactivate' : 'Activate'}`, `${isEnable ? `${usedPrefix}0 ${type}` : `${usedPrefix}1 ${type}`}`]], m)}
 handler.help = ['frocio', 'gay'].map(v => v + '<option>')
 handler.tags = ['group', 'owner']
 handler.command = /^((on|off)|(attiva|disabilita)|(turn)?[01])$/i

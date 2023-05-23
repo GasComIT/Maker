@@ -1,7 +1,7 @@
 import axios from 'axios'
 let split = '|'
 let handler = async (m, { conn, args: [effect], text: txt, usedPrefix, command, name }) => {
-let info2 = `🛡️⃟🏴‍☠ ════ •⊰❂⊱• ════ 🛡️⃟🏴‍☠\n\n𝐔𝐒𝐎 𝐃𝐄𝐋 𝐂𝐎𝐌𝐀𝐍𝐃𝐎\n${usedPrefix}logo (effetto) (testo)\n${usedPrefix}logo (effetto) (testo|testo)\n\n┌──⭓ 𝐋𝐈𝐒𝐓𝐀 𝐄𝐅𝐅𝐄𝐓𝐓𝐈\n│⭔ ${usedPrefix}logo `
+let info2 = `🛡️⃟🏴‍☠ ════ •⊰❂⊱• ════ 🛡️⃟🏴‍☠\n\nCommand Usage\n${usedPrefix}logo (effetto) (testo)\n${usedPrefix}logo (effetto) (testo|testo)\n\n┌──⭓ Effects list\n│⭔ ${usedPrefix}logo `
 let map2 = effects.map(v => v.title).join('\n│⭔ ' + usedPrefix + 'logo ')
 let info3 = `\n└───────⭓\n\n┌──⭓ 𝐀𝐋𝐓𝐑𝐈\n│⭔ ${usedPrefix}loli (txt)\n│⭔ ${usedPrefix}neon (txt)\n│⭔ ${usedPrefix}devil (txt)\n│⭔ ${usedPrefix}wolf (txt)\n│⭔ ${usedPrefix}pornhub (txt) + (txt)\n└───────⭓\n\n🛡️⃟🏴‍☠ ════ •⊰❂⊱• ════ 🛡️⃟🏴‍☠` 
 if (!effect) throw info2 + map2 + info3
@@ -12,7 +12,7 @@ let text = txt.replace(new RegExp(effect, 'gi'), '').trimStart()
 if (text.includes(split)) text = text.split(split)
 text = Array.isArray(text) ? text : [text]
 let res = await textpro(effect, ...text)
-if (typeof res == 'number') throw res == -1 ? `effetto non trovato` : `𝐔𝐒𝐎 𝐃𝐄𝐋 𝐂𝐎𝐌𝐀𝐍𝐃𝐎: ${usedPrefix + command} ${effect} ${new Array(res).fill('(testo)').map((v, i) => v + (i ? i + 1 : '')).join('|')}`
+if (typeof res == 'number') throw res == -1 ? `effetto non trovato` : `Command usage: ${usedPrefix + command} ${effect} ${new Array(res).fill('(testo)').map((v, i) => v + (i ? i + 1 : '')).join('|')}`
 let result = await axios.get(res, {
 responseType: 'arraybuffer'
 })
