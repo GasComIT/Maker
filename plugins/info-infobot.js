@@ -33,9 +33,9 @@ let info = `
 ◻──────────────◻
 
 _Maker MD ping response_
-*Bot rnutime*   : ${runtime(process.uptime())}
+*Bot runtime*   : ${runtime(process.uptime())}
 *Server speed*  : ${speed} seconds
-*Bot Ownee*     : _Mr. Benson_
+*Bot Owner*     : _Mr. Benson_
 
 ◻──────────────◻
 `.trim() 

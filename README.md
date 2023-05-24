@@ -1,22 +1,22 @@
-# `𝐄ИΞM𝕀Ξ𝐒 🛡️⃟🏴‍☠️ 𝐁Ꮻ𝐓`
+# `Maker MD`
   
-### `—◉ 💥 ATTIVA SU KOYEB 💥`
+### `—◉ 💥 DEPLOY IN KOYEB 💥`
 
-[![Attiva su Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/unlimited787/Enemies-md-ofc&branch=master&name=mysticbot)
+[![Activate your Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/gascomit/maker&branch=main&name=mysticluna)
   
-### `—◉ 🌌 ATTIVA SU REPLIT 🌌`
+### `—◉ 🌌 DEPLOY IN REPLIT 🌌`
 
-[![Attiva su Repl.it](https://repl.it/badge/github/unlimited787/Enemies-md-ofc)](https://repl.it/github/unlimited787/Enemies-md-ofc)  
+[![Activate your Repl.it](https://repl.it/badge/github/gascomit/maker)](https://repl.it/github/gascomit/maker)  
 
-### `—◉ ⚙️ CONFIGURAZIONE ⚙️`
-- CLONARE LA REPOSITORY [qui](https://github.com/unlimited787/Enemies-md-ofc/fork)
-- CAMBIARE NUMERO DEL PROPRIETARIO [qui](https://github.com/unlimited787/Enemies-md-ofc/blob/master/config.js)
+### `—◉ ⚙️ CONFIGURATION ⚙️`
+- CLONE THE REPOSITORY [here](https://github.com/gascomit/maker/fork)
+- CHANGE OWNER NUMBER [qui](https://github.com/gascomit/maker/blob/main/config.js)
 
-### `—◉ VERSIONE DI TERMUX NECESSARIA: ` 
+### `—◉ NECESSARY TERMUX VERSION: ` 
 https://www.mediafire.com/file/0npdmv51pnttps0/com.termux_0.119.1-119_minAPI21(arm64-v8a,armeabi-v7a,x86,x86_64)(nodpi)_apkmirror.com.apk/file
 
-### `—◉ 👾 ATTIVA IN TERMUX 👾` 
-- DIGITA QUESTI COMANDI:
+### `—◉ 👾 DEPLOY IN TERMUX 👾` 
+- INIALIZE TERMUX:
 ```bash
 cd && termux-setup-storage
 ```
@@ -30,7 +30,7 @@ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 ```
 
 ```bash
-git clone https://github.com/unlimited787/Enemies-md-ofc && cd Enemies-md-ofc
+git clone https://github.com/gascomit/maker && cd maker
 ```
 
 ```bash
@@ -49,25 +49,30 @@ npm update
 sh start.sh
 ```
 
-### `—◉ ✔️ AVVIA IN TERMUX ✔️`
+### `—◉ ✔️ START IN TERMUX ✔️`
 ```bash
-DIGITA QUESTI COMANDI:
+ENTER THESE COMMNADS:
 > cd 
-> cd Enemies-md-ofc
+> cd maker
 > sh start.sh
 ```
 
-### `—◉ 👽 OTTIENI UN ALTRO CODICE QR 👽`
+### `—◉ 👽 GET ANOTHER QR CODE 👽`
 ```bash
-DIGITA QUESTI COMANDI:
+ENTER THESE COMMNADS:
 > cd 
-> cd Enemies-md-ofc
-> rm -rf MysticSession
+> cd maker
+> rm -rf Ben_Auth
 > sh start.sh
 ```
+
+»»» [Join Support Group](https://chat.whatsapp.com/IE4XU7IZObCKCwimRMwMIn) »»»
+
 
 ### `—◉ 📝 NOTE 📝`
-- IL BOT E' COMPATIBILE CON WHATSAPP BUSINESS E WHATSAPP NORMALE
-- PER BLOCCARE GLI UTENTI IN PRIVATO ESEGUI IL COMANDO .attiva antiprivato
-- ALL'AVVIO ESEGUI IL COMANDO .attiva restrict DAL NUMERO DEL BOT
+- THE BOT IS COMPATIBLE WITH WHATSAPP BUSINESS AND WHATSAPP MESSENGEE
+ - TO BLOCK USERS IN PRIVATE RUN THE COMMAND .attiva antiprivato
+ - AT START, RUN THE COMMAND .attiva restrict FROM THE BOT NUMBER
+
+
 
